@@ -41,10 +41,10 @@ int main(void) {
         default:
             printf("\tSoy Abraham, mi PID es %d y el PID de mi hijo es %d. \n", getpid(), rf);
             signal(SIGUSR1, padre);
-            signal(SIGUSR2, dios); // <-- NUEVA LÍNEA
+            signal(SIGUSR2, dios); 
             sleep(1);
             printf("\tVoy a matar a mi hijo.\n");
-            sleep(15); // <-- Tienes 15 segundos para enviar SIGUSR2
+            sleep(15); 
             kill(rf, SIGUSR1);
             for (i=0; i<VUELTAS; i++);
     }

@@ -24,7 +24,7 @@ int main() {
             for (i = 0; i < 10; i++) {
                 write(fd1, string2, sizeof(string2));
                 write(fd2, string2, sizeof(string2));
-                sleep(1); // <-- cambiado de usleep(1) a sleep(1)
+                sleep(1);
             }
             break;
 
