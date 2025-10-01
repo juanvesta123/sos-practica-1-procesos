@@ -11,11 +11,11 @@ int main() {
             break;
         case 0:
             printf("Soy el hijo, mi PID es %d y mi PPID es %d \n", getpid(), getppid());
-            sleep(20); //suspende el proceso 20 segundos
+            sleep(20);
             break;
         default:
             printf("Soy el padre, mi PID es %d y el PID de mi hijo es %d \n", getpid(), rf);
-            sleep(30); //suspende el proceso 30 segundos. Acaba antes el hijo.
+            sleep(30); 
     }
     printf("Final de ejecución de %d \n", getpid());
     exit(0);
